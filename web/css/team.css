@@ -1,0 +1,698 @@
+
+.img-intro-section{
+    background-image: url("../assets/photos/intro-section2.jpg");
+  }
+
+
+  /* --------------------------------------
+------ HISTORY ---------------
+---------------------------------- */
+
+.title-history{
+    margin: 0px 0px 90px 80px;
+    position: relative;
+}
+
+.title-history p:last-child{
+    margin-bottom: -80px;
+    margin-left: -20px;
+}
+
+.history-container{
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+
+.title-history::after{
+    content: "";
+    position: absolute;
+
+    width: 150px;
+    height:150px;
+    background-image: url("../assets/icons/plant6.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 80% 10%;
+
+    right:-1%;
+    top: 100%;
+}
+
+.part-history{
+    min-height: 50vh;
+
+    display:flex;
+}
+
+.img-history{
+    flex:6;
+
+    background-image: url("../assets/photos/founders.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 10%;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 0.5em #1026036f;
+
+    position: relative;
+}
+
+.text-history{
+    flex:4;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    z-index: 20;
+}
+
+.text-history h2{
+    font-family: "Hatolie";
+    font-size: clamp(3rem, 2.286rem + 1.905vw, 4rem);
+    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.39);
+    margin-bottom:15px;
+    margin-left:-40px;
+
+    color: var(--firstLetter);
+}
+
+.text-history p{
+    margin-left:20px;
+    font-size: clamp(0.7rem, 0.953rem + 0.198vw, 1.2rem);
+    margin-bottom: 20px;
+}
+
+.text-history2 span,
+.text-history span,
+.text-in-between span{
+    font-weight: 600;
+}
+
+.text-in-between{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 85px;
+    margin-bottom: 85px;
+
+    position: relative;
+}
+
+.text-in-between::after{
+    content: "";
+    position: absolute;
+
+    width: 120px;
+    height:120px;
+    background-image: url("../assets/icons/flower2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 80% 10%;
+
+    right:-25%;
+    top:0;
+}
+
+.part-history:first-child .img-history:nth-child(1)::before{
+    content: "";
+    position: absolute;
+    transform: scaleX(-1);
+
+    width: 120px;
+    height:120px;
+    background-image: url("../assets/icons/flower2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 80% 10%;
+
+    left:-16%;
+    top: 122%;
+}
+
+.text-in-between p{
+    font-size: clamp(0.7rem, 0.953rem + 0.198vw, 1.2rem);
+}
+
+.img-history2{
+    order:2;
+
+    background-image: url("../assets/photos/founders2.jpg");
+}
+
+.text-history2{
+    order:1;
+}
+
+.text-history2 h2{
+    margin: 0;
+    text-align: right;
+    margin-right: -40px;
+    z-index: 10;
+    margin-bottom:15px;
+}
+
+.text-history2 p{
+    margin: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+
+
+  /* --------------------------------------
+------ SLIDER TEAM ---------------
+---------------------------------- */
+
+.team-container{
+    width: 85%;
+    margin: 0 auto;
+
+    display:flex;
+}
+
+.part-team{
+    flex:6;
+
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider-team{
+    min-width: 200px;
+    max-width: 400px;
+    width:100%;
+    border-radius: 20px;
+    
+    background: rgb(1,77,17);
+    background: linear-gradient(90deg, rgba(1,77,17,1) 0%, rgba(14,91,2,1) 51%, rgba(1,77,17,1) 100%);
+
+    min-height: 70vh;
+    flex:3;
+
+    color:white;
+
+    display:flex;
+    justify-content: center;
+
+
+    overflow: hidden;
+    position: relative;
+
+    box-shadow: 0 0 0.5em #00000061;
+
+}
+
+.slider-team::after{
+    content: "";
+    position: absolute;
+
+    width: 80px;
+    height:80px;
+    background-image: url("../assets/icons/plant7.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    bottom: 0;
+    right: 5%;
+}
+
+
+.content-slider-team{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height:100%;
+
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+}
+
+
+
+.img-team-slider{
+    width: 200px;
+    height:200px;
+
+    box-shadow: 0 0 0.5em #ffffff;
+    
+    border-radius: 50%;
+    background-color:pink;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.social-media-team{
+    display:flex;
+}
+
+.face-team{
+    filter: drop-shadow(0 0 0.5em #ffffff61);
+    margin-right: 30px;
+    min-width: 25px;
+    min-height:25px;
+    background-image: url("../assets/icons/facebook.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.x-team{
+    filter: drop-shadow(0 0 0.5em #ffffff61);
+
+    margin-right: 30px;
+    min-width: 25px;
+    min-height:25px;
+    background-image: url("../assets/icons/twitter.png");
+    background-size: cover;
+    background-repeat:contain;
+    background-position: center center;
+}
+
+.insta-team{
+    filter: drop-shadow(0 0 0.5em #ffffff61);
+
+    margin-right: 30px;
+    min-width: 25px;
+    min-height:25px;
+    background-image: url("../assets/icons/instagram.png");
+    background-size: cover;
+    background-repeat:contain;
+    background-position: center center;
+}
+
+.linked-team{
+    filter: drop-shadow(0 0 0.5em #ffffff61);
+
+    min-width: 25px;
+    min-height:25px;
+    background-image: url("../assets/icons/link.png");
+    background-size: cover;
+    background-repeat:contain;
+    background-position: center center;
+}
+
+.name-team{
+   margin-top:40px;
+   margin-bottom:20px;
+   text-align: center;
+
+    font-family: "Aurora";
+    text-shadow: 0 0 0.2em rgb(255, 255, 255);
+    font-size: clamp(1rem, 0.93rem + 0.296vw, 1.3rem);
+}
+
+.occupation{
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.circles-team-slider{
+    display:flex;
+    margin-top:40px;
+}
+
+.dot-team{
+    height:15px;
+    width:15px;
+    background-color: white;
+    border-radius: 50%;
+
+    margin-right:15px;
+    cursor: pointer;
+    align-self: flex-end;
+
+    box-shadow: 0 0 0.5em #ffffff61;
+}
+
+.dot-team:last-child{
+    margin-right:0;
+}
+
+.active-dot-team{
+    background-color: rgb(113, 175, 113);
+}
+
+.content-slider-team {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content-slider-team .content {
+    opacity: 1;
+}
+
+.content-slider-team.fade .content {
+    opacity: 0.5;
+}
+
+.fade-out {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+.fade-in {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+.text-team{
+    position: relative;
+}
+
+.text-team p:first-child{
+    font-size: clamp(0.7rem, 0.953rem + 0.198vw, 1.2rem);
+    margin-right:20px;
+    margin-top: 20px;
+}
+
+.text-team p:last-child{
+    margin-top: 50px;
+    font-size: clamp(1.3rem, 1.23rem + 0.296vw, 1.6rem);
+    font-weight: 600;
+    font-style: italic;
+
+    position: relative;
+}
+
+.text-team::before{
+    height:100px;
+    width:100px;
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top:68%;
+    opacity: 0.2;
+
+    background-image: url("../assets/icons/quote.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    background-color: white;
+}
+
+.text-team p:last-child::after{
+    height:100px;
+    width:100px;
+    content: "";
+    position: absolute;
+    z-index: -10;
+    bottom:-190%;
+    right:40%;
+    opacity: 0.2;
+    transform: rotate(180deg);
+
+    background-image: url("../assets/icons/quote.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    background-color: white;
+}
+
+
+  /* --------------------------------------
+------ PROGRESS RINGS ---------------
+---------------------------------- */
+
+.progress-container{
+    margin: 0 auto;
+    margin-top: 140px;
+    width:85%;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.progress-container::after{
+    content: "Team skills";
+    position: absolute;
+    text-shadow: 0 0 0.2em rgba(15, 53, 5, 0.39);
+    font-family: "Aurora";
+    opacity: 0.2;
+    z-index: -1;
+    color: darkgreen;
+    /* top:1px; */
+    margin-bottom: 100px;
+    margin-left:60px;
+    letter-spacing: 60px;
+    font-size: clamp(4rem, 3.765rem + 0.988vw, 5rem);
+
+    
+    background-color: white;
+}
+
+.skill-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+  }
+
+.skill1{
+    background: conic-gradient(rgb(87, 128, 114) 85%, transparent 0 100%);
+}
+
+.skill2{
+    background: conic-gradient(rgb(87, 128, 114) 99%, transparent 0 100%);
+}
+
+.skill3{
+    background:conic-gradient(rgb(87, 128, 114) 70%, transparent 0 100%);
+}
+
+.skill4{
+    background: conic-gradient(rgb(87, 128, 114) 80%, transparent 0 100%);
+}
+
+.skill5{
+    background:conic-gradient(rgb(87, 128, 114) 89%, transparent 0 100%);
+}
+
+  .skill-container:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  
+  .skill-container .skill {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .skill-container .percentage {
+    font-size: 20px;
+  }
+  
+  .skill-container .name {
+    font-size: 12px;
+  }
+
+
+  /* --------------------------------------
+------ MEDIA QUERIES ---------------
+---------------------------------- */
+
+  @media (max-width:700px){
+
+    .title p:last-child {
+        margin-top: 10px;
+    }
+      
+    
+    /* HISTORY */
+
+    .text-in-between::after {
+        content: none;
+    }
+
+    .part-history:first-child .img-history:nth-child(1)::before {
+        content: none;
+    }
+
+    .text-in-between {
+        width: 90%;
+    }
+
+
+    /* TEAM */
+
+    .team-container {
+        flex-direction: column;
+    }
+
+    .slider-team{
+        align-items: center;
+        margin: 0 auto;
+        margin-top:80px;
+    }
+
+
+    .text-team p:last-child::after {
+        right: 10%;
+    }
+
+    .text-team::before {
+        left:10%;
+    }
+
+    .text-team p:last-child {
+
+       text-align: center;
+    }
+
+
+    /* //PROGRESS CONTAIBNER */
+
+
+    .progress-container {
+        margin-top: 200px;
+    }
+
+    .progress-container::after {
+        margin-bottom: 180px;
+        text-align: center;
+    
+    }
+}
+
+
+@media (max-width:650px){
+
+
+    /* HISTORY */
+    .img-history {
+        background-position: 60% 10%;
+    }
+
+    .title-history::after {
+        content: none;
+    }
+
+}
+
+@media (max-width:550px){
+
+    .title-history p:last-child {
+        margin-top: -70px;
+        margin-left:10px;
+    }
+
+    .title-history{
+        margin-bottom:80px;
+        margin-left:50px;
+    }
+        
+  /* HISTORY */
+    .text-history p {
+       margin: 0;
+       margin-bottom: 15px;
+    }
+
+    .part-history{
+        flex-direction: column;
+        min-height:70vh;
+    }
+
+    .text-in-between {
+        margin-top:50px;
+        margin-bottom: 50px;
+    }
+
+    .text-history h2 {
+        margin:0;
+        margin-bottom:20px;
+    }
+
+    .part-history:first-child .img-history,
+    .part-history:last-child .img-history{
+        min-height: 300px
+    }
+    .part-history:first-child .img-history{
+        order:2;
+    }
+
+    .part-history:first-child .text-history{
+        order:1;
+        margin-bottom: 30px;
+    }
+
+    .text-history2 h2, 
+    .text-history2 p {
+        text-align: left;
+    }
+
+    .text-history{
+        flex:0;
+    }
+
+    .part-history:last-child .img-history{
+        margin-top:30px;
+    }
+
+    /* //TEAM */
+
+    .text-team p:last-child::after {
+        top: -73%;
+    }
+
+/*  SKILLS */
+
+.skill-container{
+    margin: 10px 8px;
+}
+
+.progress-container::after {
+    margin: 0;
+    margin-bottom: 300px;
+    margin-left:25px;
+    letter-spacing: 30px;
+}
+
+    .progress-container{
+        flex-flow: row wrap;
+
+    }
+
+}
+
+
+@media (max-width:400px){
+
+    .progress-container {
+        margin-top: 250px;
+    }
+
+    .progress-container::after {
+        margin-bottom: 550px;
+        letter-spacing: 20px;
+    }
+
+    .text-in-between{
+       width: 95%;
+    }
+
+}

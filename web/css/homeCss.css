@@ -1,0 +1,830 @@
+
+/* --------------------------------------
+----------- HERO BODY ---------------------
+---------------------------------- */
+
+.body-hero {
+    height: 85vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-hero {
+    text-shadow: 0 0 0.8em #113b198a;
+}
+
+.title-hero p {
+    font-family: "Hatolie";
+    font-size: clamp(6rem, 3.889rem + 8.889vw, 15rem);
+    color: var(--greenTitle);
+}
+
+.title-hero p:last-child {
+    margin-top: -75px;
+    color: var(--darkGreen);
+}
+
+.slogan-hero p {
+    color: rgb(123, 128, 123);
+    font-size: clamp(0.8rem, 0.706rem + 0.395vw, 1.2rem);
+}
+
+.img-hero {
+    position: relative;
+    box-shadow: 0 0 0.5em #1026036f;
+    width: 50%;
+    height: 80%;
+    border-radius: 20px;
+    margin-left: -200px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .img-container2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+@keyframes fadeIn {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+  /* --------------------------------------
+----------- WHO ARE WE ---------------------
+---------------------------------- */
+
+
+.who-container{
+    min-height:80vh;
+    width:85%;
+    margin: 0 auto;
+    margin-top:50px;
+    box-sizing: border-box;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.img-who{
+    flex:4;
+    min-height:60vh;
+    width:100%;
+
+    background-image: url("../assets/photos/who-photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 0.5em #1026036f;
+}
+
+.who-text{
+    flex:3;
+    margin-top:-140px;
+}
+
+.who-title{
+    margin-left:-130px;
+
+    display:flex;
+    align-items: center;
+}
+
+.who-title p:last-child{
+    margin-left:15px;
+    margin-top:20px;
+
+    font-family: "Aurora";
+    font-size: var(--titleSize2);
+    color: var(--darkGreen);
+    text-shadow: 0 0 0.1em #0000008a;
+}
+
+.who-title p:first-child::first-letter{
+    color: var(--firstLetter);
+}
+
+.who-title p:first-child{
+    font-family: "Hatolie";
+    font-size: var(--titleSize);
+    color: var(--darkGreen);
+    text-shadow: 0 0 0.1em #0000009d;
+}
+
+.who-content{
+    padding-left:30px;
+    font-size: clamp(1rem, 0.953rem + 0.198vw, 1.2rem);
+}
+
+.who-content span{
+    font-weight: 500;
+}
+.who-content p:last-child{
+    margin-top:30px;
+}
+
+  /* --------------------------------------
+----------- OUR SERVICES ---------------------
+---------------------------------- */
+
+.title-services{
+    margin-top:80px;
+    margin-bottom:80px;
+    margin-left:100px;
+}
+
+.slide-service p:first-child{
+    font-family: "Aurora";
+    font-size: var(--titleSize2);
+    color: white;
+    text-shadow: 0 0 0.1em rgb(255, 255, 255);
+}
+
+.slide-service p:first-child::first-letter{
+    color: lightgreen;
+}
+
+.text-slide-service{
+    width:60%;
+
+    text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.541);
+}
+
+.slide-service p:last-child, .slide-service p:nth-child(2){
+    color:white;
+    font-size: clamp(1rem, 0.953rem + 0.198vw, 1.2rem);
+    text-shadow: 0 0 0.2em rgb(255, 255, 255);
+}
+
+.slide-service p:nth-child(2){
+    margin-top:30px;
+}
+
+.slide-service p:last-child{
+    margin-top:20px;
+}
+
+.text-slider-container{
+    display: flex;
+    align-items: center;
+    height: 100%; 
+    box-sizing: border-box;
+    margin-left:100px;
+}
+
+
+.slider-services {
+    box-sizing: border-box;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-service {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+
+
+.slide-service.active {
+    display: block;
+
+    width:85%;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.slide-service:nth-child(1) {
+    background-image: url('../assets/photos/slide1-service.jpg');
+}
+
+.slide-service:nth-child(2) {
+   background-image: url('../assets/photos/slide2-service.jpg');
+   background-color: lightblue;
+}
+
+.slide-service:nth-child(3) {
+    background-image: url('../assets/photos/slide3-service.jpg');
+    background-color: lightcoral;
+}
+
+.slide-service:nth-child(4) {
+    background-image: url('../assets/photos/slide4-service.jpg');
+    background-color: lightgreen;
+}
+
+.slide-service:nth-child(5) {
+    background-image: url('../assets/photos/slide5-service.jpg');
+    background-color: lightsalmon;
+}
+
+.circles-slider {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.circles-slider span {
+    box-shadow: 0 0 0.5em #ffffff6f;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in;
+}
+
+.circles-slider span:hover {
+    background-color: rgb(163, 233, 205);
+}
+
+.circles-slider span.active {
+    background-color: lightgreen;
+}
+
+/* --------------------------------------
+----------- PHILOSOPHY ---------------------
+---------------------------------- */
+
+.fancy-phil{
+    width:200px;
+}
+
+.philosophy-container{
+    min-height:60vh;
+    width:85%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+
+    display:flex;
+    align-items: center;
+}
+
+.part-philosophy:first-child{
+    flex:3;
+}
+
+.part-philosophy:first-child p{
+    font-family: "Aurora";
+    font-size: var(--titleSize2);
+    color: var(--firstLetter);
+    text-shadow: 0 0 0.1em #0000008a;
+}
+
+.part-philosophy:last-child{
+    flex:4;
+    display:flex;
+    flex-direction: column;
+
+    font-size: clamp(1rem, 0.953rem + 0.198vw, 1.2rem);
+}
+
+.fancy{
+    margin-top:30px;
+}
+
+.bold-phil{
+    font-weight: 500;
+}
+
+
+/* --------------------------------------
+------ EXPLORE DESIGNS ---------------
+---------------------------------- */
+
+
+.title-explore {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    z-index: 20;
+
+    position: absolute;
+    top:3%;
+    right:73%;
+}
+
+.title-explore p:first-child::first-letter {
+    color: var(--firstLetter);
+}
+
+.title-explore p:first-child {
+    font-family: "Hatolie";
+    font-size: var(--titleSize);
+    color: var(--darkGreen);
+    text-shadow: 0 0 0.1em #0000008a;
+}
+
+.title-explore p:last-child {
+    margin-top: -30px;
+    margin-right: -200px;
+    margin-left:100px;
+
+    font-family: "Aurora";
+    font-size: var(--titleSize2);
+    color: var(--darkGreen);
+    text-shadow: 0 0 0.1em #0000008a;
+}
+
+.explore-container {
+    min-height: 150vh;
+    width: 85%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.part-explore {
+    display: flex;
+    width:90%;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.part-explore:last-child{
+    margin-top:100px;
+}
+
+.img-explore {
+    background-color: lightgreen;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    min-height: 60vh;
+    flex: 8;
+    margin-left: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 0.5em #1026036f;
+}
+
+.img-explore{
+    background-image: url("../assets/photos/designs1.jpg");
+}
+
+.text-explore {
+    flex: 4;
+    text-align: right;
+    margin-bottom: 50px;
+    margin-top: auto;
+
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.text-explore2{
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+.designs2{
+    background-image: url("../assets/photos/designs2.jpg");
+    margin-right: 20px;
+}
+
+.text-explore p:first-child {
+    font-family: "Hatolie";
+    font-size: clamp(3rem, 2.824rem + 0.941vw, 4rem);
+    text-shadow: 0 0 0.1em #0000008a;
+}
+
+/* --------------------------------------
+------ CTA ---------------
+---------------------------------- */
+
+.like-container{
+    min-height: 40vh;
+
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.like-container p{
+    font-family: "Aurora";
+    font-size: clamp(1.5rem, 1.031rem + 1.975vw, 3.5rem);
+    color: var(--darkGreen);
+    text-shadow: 0 0 0.1em #0000008a;
+    text-align: center;
+
+
+}
+
+.fancy-design{
+    margin-top:40px;
+    width:300px;
+}
+
+
+.like-container::after{
+    position: absolute;
+    content: "";
+    width:100%;
+    height:30px;
+    background-image: url("../assets/photos/plantCTA.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;;
+    transform: scaleX(-1);
+    top:58%;
+    left:-20%;
+    z-index: -1;
+}
+
+
+.like-container:before{
+    position: absolute;
+    content: "";
+    width:100%;
+    height:30px;
+    background-image: url("../assets/photos/plantCTA.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:58%;
+    left:20%;
+    z-index: -1;
+ 
+}
+
+/* --------------------------------------
+------ QUOTE ---------------
+---------------------------------- */
+
+.quote-container{
+    margin-top:100px;
+    height:100vh;
+
+    background-image: url("../assets/photos/quoteHome.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.quote-container p:first-child{
+    font-family: "Aurora";
+    font-size: clamp(1.3rem, 1.031rem + 1.975vw, 2rem);
+    color: white;
+    text-shadow: 0 0 0.1em #ffffff;
+    text-align: center;
+}
+
+
+.quote-container p:last-child{
+    margin-top:20px;
+    font-family: "Aurora";
+    font-size: clamp(1rem, 1.031rem + 1.975vw, 1.5rem);
+    color: rgb(218, 255, 227);
+    text-shadow: 0 0 0.1em #ffffff;
+    text-align: center;
+}
+
+
+/* --------------------------------------
+----------- RANDOM PLANTS ---------------------
+---------------------------------- */
+
+.who-container::after{
+    position: absolute;
+    content: "";
+    width:180px;
+    height:180px;
+    background-image: url("../assets/icons/plant3.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -9%;
+    bottom:-20%;
+    transform: rotate(10deg);
+    z-index: -1;
+}
+
+.philosophy-container::after{
+    position: absolute;
+    content: "";
+    width: 150px;
+    height:150px;
+    background-image: url("../assets/icons/plant5.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left:-10%;
+    margin-top:-300px;
+    z-index: -1;
+}
+
+
+.philosophy-container::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height:100px;
+    background-image: url("../assets/icons/plant4.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right:-10%;
+    margin-top:400px;
+    transform: rotate(10deg);
+    z-index: -1;
+}
+
+.part-explore:last-child::before{
+    position: absolute;
+    content: "";
+    width: 150px;
+    height:150px;
+    background-image: url("../assets/icons/plant6.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right:-15%;
+    transform: rotate(10deg);
+    z-index: -1;
+}
+
+
+/* --------------------------------------
+----------- MEDIA QUERIES ---------------------
+---------------------------------- */
+
+@media (max-width: 1030px) {
+
+    .title-hero p:last-child {
+        margin-top: -50px;
+        color: var(--darkGreen);
+    }
+
+    .slogan-hero p {
+        margin-top:20px;
+        width:50%;
+    }
+
+  }
+
+  @media (max-width:900px) {
+
+    .who-title p:last-child {
+        margin-top: 15px;
+    }
+
+}
+
+@media (max-width:800px) {
+
+    .body-hero{
+        padding-top:20px;
+    }
+
+    .slogan-hero p {
+            margin-top:0px;
+            width:100%;
+    }
+
+   
+
+    .body-hero{
+        flex-flow: column nowrap;
+    }
+
+    .img-hero{
+        order:1;
+        height: 60%;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .title-hero{
+        margin-top:-40px;
+    }
+
+    .text-hero{
+        order:2;
+        text-align: center;
+    }
+
+  }
+
+  @media (max-width:700px) {
+
+    .who-container::after{
+        content:none;
+    }
+
+    .philosophy-container::after{
+        content:none;
+    }
+
+    .philosophy-container::before{
+        content:none;
+    }
+
+    .part-explore:last-child::before{
+        content: none;
+    }
+
+    /* //who */
+  .who-container{
+    flex-flow: column nowrap;
+  }
+
+  .img-who{
+    order:2;
+    min-height:50vh;
+    margin-top:40px;
+  }
+
+  .who-title{
+    text-align: center;
+    margin-left:20px;
+    margin-bottom:20px;
+  }
+
+  .who-text{
+    margin-top:0;
+  }
+
+  .who-content{
+    padding:0;
+  }
+
+  /* philosophy */
+
+.slider-services{
+    margin-bottom: 150px;
+}
+
+.explore-container{
+    margin-top:260px;
+}
+
+  .part-philosophy:first-child p {
+    margin-bottom:30px;
+}
+
+  .philosophy-container{
+   flex-direction: column;
+   align-items: flex-start;
+   min-height: initial;
+
+   position: relative;
+}
+
+  .part-philosophy:first-child {
+    flex: 0;
+}
+
+.part-philosophy:last-child{
+    flex:0;
+}
+
+
+
+  /* services */
+
+  .title-explore{
+    top:-13%;
+    left:0%;
+  }
+
+  .part-explore{
+    flex-direction: column;
+    width:100%;
+  }
+
+  .part-explore:last-child{
+    margin-top:30px;
+  }
+
+  .title-explore p:last-child {
+    margin-top: -15px;
+}
+
+
+
+  .img-explore{
+    margin:0;
+  }
+
+  .img-explore{
+    order:1;
+  }
+
+  .img-explore {
+    min-height: 50vh;
+}
+
+  .text-explore{
+    margin-top:20px;
+    /* order:2; */
+    text-align: left;
+  }
+
+  .text-explore p:first-child {
+    width: 100%;
+    text-align: left;
+}
+
+.explore-container {
+    min-height: initial;
+}
+
+  /* like */
+
+  .like-container:after{
+    content: none;
+  }
+
+  .like-container:before{
+    content: none;
+  }
+
+    /* slider */
+
+    .title p:last-child {
+        margin-top: 10px;
+    }
+
+    .title-services {
+        margin-left: 52px;
+    }
+
+
+}
+
+@media (max-width: 700px) {
+
+    .text-slide-service{
+        width:100%;
+        margin-left:-60px;
+    }
+
+
+  }
+
+  @media (max-width:550px) {
+
+    .quote-container{
+        padding:40px;
+    }
+
+}
