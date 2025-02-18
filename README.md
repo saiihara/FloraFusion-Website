@@ -8,4 +8,4 @@ Special thanks to freepik.com and pexels.com for the free pictures
 <br>
 Disclaimer: Flora Fusion doesn't actually exist! It's a made-up company that I created for this project
 <br>
-Site demo at: florafusionff.netlify.app
+Site demo at: [florafusionff.netlify.app](https://florafusionff.netlify.app)
